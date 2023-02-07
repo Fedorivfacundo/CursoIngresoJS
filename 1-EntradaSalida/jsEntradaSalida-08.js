@@ -4,6 +4,18 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 function SacarResto()
-{
-	alert("ok");
+{   let numDiviendo;
+	let numDivisor;
+	let mensaje;
+
+	numDiviendo = document.getElementById("txtIdNumeroDividendo").value;
+	numDivisor = document.getElementById("txtIdNumeroDivisor").value;
+
+	numDiviendo=parseInt(numDiviendo);
+	numDivisor=parseInt (numDivisor);
+
+	mensaje = "El resto es " + numDiviendo % numDivisor;
+	
+	alert(mensaje);
+	
 }
